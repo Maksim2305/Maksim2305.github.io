@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Open+Sans:wght@400;700&family=Roboto&family=Crimson+Text:ital@1&display=swap"
+    rel="stylesheet">
+  <link href="/common.css" rel="stylesheet" />
+  <link href="style.css" rel="stylesheet" />
+  <link rel="shortcut icon" href="/static/images/favicon.ico">
+  <meta name="viewport" content="width=device-width,
+initial-scale=1">
+  <title>Главная</title>
+</head>
+
+<body>
+  <header class="header container">
+    <div class="header__wrapper">
+        <ul class="header__list">
+            <li class="header__item__logo">
+                <a href="/index.html"><img src="/static/images/logo.jpg" alt="Site logo" class="header__logo"></a>
+            </li>
+            <li class="header__item">
+                <a href="/pages/blog/index.html" class="header__link">Blog</a>
+            </li>
+            <li class="header__item">
+                <a href="/pages/catalog/index.html" class="header__link">Catalog</a>
+            </li> 
+            <li class="header__item">
+                <a href="/pages/toys/index.html" class="header__link">About us</a>
+            </li>
+        </ul>
+        <ul class="header__list_contact">
+            <li class="header__item_contact">
+                <a href="#" class="header__serch"><img class="search" src="/static/images/serch.png" alt="Search"></a>
+            </li>
+            <li class="header__item">
+                <a href="/contact-us.html" class="header__link">Contact Us</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="mobile-header">
+        <div class="header__list">
+            <div class="mobile-header__item">
+                <a href="/index.html"><img class="header__logo" src="/static/images/logo.jpg" alt="Site logo"></a>
+            </div>
+            <div class="mobile-header__item-open">
+                <div class="mobile-menu">
+                        <input type="checkbox" class="mobile-menu__checkbox" id="menu"></input>
+                        <label class="mobile-menu__label" for="menu"></label>
+                    <ul class="mobile-menu__list">
+                        <li class="mobile-menu__item">
+                            <a class="header__link" href="#">catalog</a>
+                        </li>
+                        <li class="mobile-menu__item">
+                            <a class="header__link" href="#">about us</a>
+                        </li>
+                        <li class="mobile-menu__item">
+                            <a class="header__link" href="#">blog</a>
+                        </li>
+                        <li class="mobile-menu__item">
+                            <a class="header__link" href="#">animation</a>
+                        </li>
+                        <li class="mobile-menu__item">
+                            <a class="header__link" href="#">svg</a>
+                        </li>
+                        <li class="mobile-menu__item">
+                            <a class="header__link" href="#">grid</a>
+                        </li>
+                        <li class="mobile-menu__item">
+                            <a class="header__link" href="#">contact us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mobile-header__item">
+                <a href="#" class="header__serch"><img src="/static/images/serch.png" alt="Search"></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="mobile__popup">
+        <!-- <div class="mobile-header">
+                    <ul class="header__list">
+                        <li class="mobile-header__item">
+                            <a href="/index.html"><img class="header__logo" src="/static/images/logo.jpg" alt="Site logo"></a>
+                        </li>
+                        <li class="mobile-header__item">
+                            <button class="mobile-header__button_close">x</button>
+                        </li>
+                        <li class="mobile-header__item">
+                            <a href="#" class="header__serch"><img src="/static/images/serch.png" alt="Search"></a>
+                        </li>
+                    </ul>
+                </div> -->
+
+    </div>
+</header>
+  <main>
+    <div class="popup">
+    <form class="popup__form">
+        <button type="button" class="popup__button-close" id="popup-close-button"></button>
+        <div class="popup__form_input">
+            <label class="popup__form_label" for="name">Name</label>
+            <input class="popup__form_item" type="text" placeholder="Ivan Ivanov" id="name">
+        </div>
+        <div class="popup__form_input-two">
+            <div class="popup__form_input">
+                <label class="popup__form_label" for="name">Phone</label>
+                <input class="popup__form_item" type="tel" id="phone">
+            </div>
+            <div class="popup__form_input">
+                <label class="popup__form_label" for="email">Email</label>
+                <input class="popup__form_item" type="text" id="email">
+            </div>
+        </div>
+        <div class="popup__form_input">
+            <label class="popup__form_label" for="message">Message</label>
+            <textarea class="popup__form_item-message" id="message"></textarea>
+        </div>
+        <div class="popup__form_input">
+            <div class="popup__form_check">
+                <div class="popup__inputs">
+                    <input class="checkbox-input" type="checkbox" id="contact-chekcbox">
+                    <label for="contact-chekcbox" class="checkbox-label">By clicking on the button, you consent to the
+                processing of your personal data</label>
+                </div>
+                <div>
+                    <a href="#" class="link__button">submit</a>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+    <section class="collection container">
+      <div class="collection__wrapper">
+        <div class="collection__button_block">
+          <p class="collection__number">01</p>
+          <button class="collection__slider_active"></button>
+          <button class="collection__slider"></button>
+          <button class="collection__slider"></button>
+          <button class="collection__slider"></button>
+        </div>
+        <div class="collection__title_block">
+          <h2 class="collection__title">THE OOH NOO<br>COLLECTION</h2>
+          <div class="collection__design">
+            <p>Designed in Slovenia</p>
+          </div>
+          <div>
+            <button class="collection__button">explore now</button>
+          </div>
+        </div>
+        <div class="collection__wrapper_img">
+          <img class="collection__wrapper_img_pic" src="/static/images/collection.png" alt="col">
+        </div>
+      </div>
+      <p class="collection__content">Free (continental) USA shipping on all orders of $100 USD or more!</p>
+    </section>
+
+    <section class="products container">
+      <div class="products__wrapper">
+        <h2 class="products__title">Category Products</h2>
+        <ul class="products__list">
+          <li class="products-item">
+    <img class="products-item__image" src="/static/images/produtcs/1.jpg" alt="card">
+    <a href="#" class="products-item__link">APPAREL <br>KIDS</a>
+</li>
+          <li class="products-item">
+    <img class="products-item__image" src="/static/images/produtcs/2.jpg" alt="card">
+    <a href="#" class="products-item__link">HOLIDAY <br>SHOP</a>
+</li>
+          <li class="products-item">
+    <img class="products-item__image" src="/static/images/produtcs/3.jpg" alt="card">
+    <a href="#" class="products-item__link">TOYS</a>
+</li>
+          <li class="products-item">
+    <img class="products-item__image" src="/static/images/produtcs/4.jpg" alt="card">
+    <a href="#" class="products-item__link">ACCESSORIES</a>
+</li>
+        </ul>
+        <div class="products__pagination">
+          <button class="products__pagination__left"></button>
+          <button class="products__pagination__right"></button>
+          <p class="products__description">Modern finds for the modern home. Curated goods by
+            unique
+            designers
+            around the world from fashion to
+            furniture for kids and adults.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="delivery container">
+      <div class="delivery__inner">
+        <div class="delivery__inner_img">
+          <img class="delivery__pic" src="/static/images/delivery/woman.jpg" alt="woman">
+        </div>
+        <div class="delivery__content">
+          <h2 class="delivery__content_title">Delivery</h2>
+          <div class="delivery__content_button-active">
+            <span class="delivery__content_item-active">Delivery</span>
+          </div>
+          <div class="delivery__content_button">
+            <span class="delivery__content_item">Guarantee</span>
+          </div>
+          <div class="delivery__content_button">
+            <span class="delivery__content_item">Credit</span>
+          </div>
+          <span class="delivery__content_description">Some days i feel like i've been working on dlk my entire life and there are other days that
+            i am completely shocked that four years have flown by. It's simply magical.<br><br>
+            What started as an outlet to deal with the traumatic loss of my husband, dlk has now become a truly happy
+            place for me and i have you and all of the beautiful designers that we work with to thank!</span>
+            <div>
+              <a href="#" class="link__button">learn more</a>
+            </div>
+        </div>
+      </div>
+    </section>
+    <section class="partners container">
+      <ul class="partners__list">
+        <li class="partners__item">
+          <img src="/static/images/partners/mail.png" alt="Mail" class="partners__image">
+        </li>
+        <li class="partners__item">
+          <img src="/static/images/partners/apple.png" alt="Apple" class="partners__image">
+        </li>
+        <li class="partners__item">
+          <img src="/static/images/partners/altex.png" alt="Altex" class="partners__image">
+        </li>
+        <li class="partners__item">
+          <img src="/static/images/partners/owox.png" alt="Owox" class="partners__image">
+        </li>
+      </ul>
+    </section>
+
+    <section class="about-us container">
+      <div class="about-us__wrapper">
+        <div class="about-us__design">
+          <h2 class="about-us__title">Design Life Kids</h2>
+          <div class="about-us__wrap">
+            <p class="about-us__description">About Us</p>
+            <p class="about-us__content">Some days i feel like i've been working on dlk my entire life and there
+              are other days that
+              i am completely
+              shocked that four years have flown by. It's simply magical.</p>
+              <div class="about-us__button">
+                <a href="#" class="link__button">buy now</a>
+              </div>
+          </div>
+        </div>
+        <div class="about-us__contact">
+          <h2 class="about-us__title">Contacts</h2>
+          <div class="contact__wrap">
+            <p class="about-us__content">Some days i feel like i've been working on dlk my entire life
+              and there are other days that
+              i am completely
+              shocked that four years have flown by. It's simply magical.</p>
+              <div class="map">
+    <iframe class="map__img"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6307.297658787688!2d-122.42228541963736!3d37.77483159377148!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808580a196ede719%3A0x2fb5607634331f2f!2zSGF5ZXMgVmFsbGV5LCDQodCw0L0t0KTRgNCw0L3RhtC40YHQutC-LCDQmtCw0LvQuNGE0L7RgNC90LjRjyA5NDEwMiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1611555004992!5m2!1sru!2sru"
+        frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+        tabindex="0"></iframe>
+</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer__contain container">
+        <div class="footer__wrapper">
+            <div class="footer__list">
+                <div class="footer__wrapper_one">
+                    <div class="footer__first_item_nav">
+                        <a href="#" class="footer__first_link_nav">Navigation</a>
+                    </div>
+                    <ul class="footer__first">
+                        <li class="footer__first_item">
+                            <a href="#" class="footer__first_link">About Us</a>
+                        </li>
+                        <li class="footer__first_item">
+                            <a href="#" class="footer__first_link">Blog</a>
+                        </li>
+                        <li class="footer__first_item">
+                            <a href="#" class="footer__first_link">Design Services</a>
+                        </li>
+                        <li class="footer__first_item">
+                            <a href="#" class="footer__first_link">Featured On</a>
+                        </li>
+                        <li class="footer__first_item">
+                            <a href="#" class="footer__first_link">2018 Holiday Catalog</a>
+                        </li>
+                        <li class="footer__first_item">
+                            <a href="#" class="footer__first_link">Shop By Designer</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__wrapper_two">
+                    <div class="footer__first_item_nav">
+                        <a href="#" class="footer__first_link_nav">Customer Information</a>
+                    </div>
+                    <ul class="footer__second">
+                        <li class="footer__first_item">
+                            <a href="#" class="footer__first_link">Contact Us</a>
+                        </li>
+                        <li class="footer__first_item">
+                            <a href="#" class="footer__first_link">Sale Exclusions</a>
+                        </li>
+                        <li class="footer__first_item">
+                            <a href="#" class="footer__first_link">Shipping & Returns</a>
+                        </li>
+                        <li class="footer__first_item">
+                            <a href="#" class="footer__first_link">Terms & Conditions</a>
+                        </li>
+                        <li class="footer__first_item">
+                            <a href="#" class="footer__first_link">Privacy Policy</a>
+                        </li>
+                        <li class="footer__first_item">
+                            <a href="#" class="footer__first_link">Search</a>
+                    </ul>
+                </div>
+                <div class="footer__wrapper_three">
+                        <div class="footer__first_item_nav">
+                            <a href="#" class="footer__first_link_nav">Connect</a>
+                        </div>
+                    <div class="footer__connect">
+                        <form class="footer__connect_form">
+                            <input type="search" placeholder="Email" class="footer__form_input">
+                            <a href="#" class="link__button">join</a>
+                        </form>
+                        <div class="footer__connect_network">
+                            <a href="#"><img src="/static/images/social networks/facebook.svg" alt="facebook"
+                                    class="footer__connect_image"></a>
+                            <a href="#"><img src="/static/images/social networks/twitter.svg" alt="twitter"
+                                    class="footer__connect_image"></a>
+                            <a href="#"><img src="/static/images/social networks/pinterest.svg" alt="pinterest"
+                                    class="footer__connect_image"></a>
+                            <a href="#"><img src="/static/images/social networks/instagram.svg" alt="instagram"
+                                    class="footer__connect_image"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="footer__bottom_rating">
+                <span class="footer__bottom_caption">Company rating</span>
+                <div class="rating-group">
+    <input class="rating-star" type="radio" value="1" name="rating" aria-label="one">
+    <input class="rating-star" type="radio" value="2" name="rating" aria-label="two">
+    <input class="rating-star" type="radio" value="3" name="rating" aria-label="three">
+    <input class="rating-star" type="radio" value="4" name="rating" aria-label="four">
+    <input class="rating-star" type="radio" value="5" name="rating" aria-label="five">
+</div>
+            </div>
+            <span class="footer__bottom_link">Copyright © 2018 Dlk • Design Life Kids</span>
+            <span class="footer__bottom_link-nav">Web Design — Direct Line Development</span>
+        </div>
+    </div>
+</footer>
+  <script src="scripts.js"></script>
+</body>
+
+</html>

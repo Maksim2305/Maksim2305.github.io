@@ -1,0 +1,1 @@
+"use strict";var e=document.querySelector("html"),t=document.querySelector("#popup-close-button");document.querySelector(".collection__button").addEventListener("click",function(){e.classList.add("popup-open"),t.focus()}),t.addEventListener("click",function(){e.classList.remove("popup-open")});

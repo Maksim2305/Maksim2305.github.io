@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Open+Sans:wght@400;700&family=Roboto&family=Crimson+Text:ital@1&display=swap"
+        rel="stylesheet">
+    <link href="/common.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/static/fonts/oswald.css" />
+    <link rel="shortcut icon" href="/static/images/favicon.ico" />
+    <meta name="viewport" content="width=device-width,
+initial-scale=1">
+    <title>Игрушки</title>
+</head>
+
+<body>
+    <header class="header container">
+    <div class="header__wrapper">
+        <ul class="header__list">
+            <li class="header__item__logo">
+                <a href="/index.html"><img src="/static/images/logo.jpg" alt="Site logo" class="header__logo"></a>
+            </li>
+            <li class="header__item">
+                <a href="/pages/blog/index.html" class="header__link">Blog</a>
+            </li>
+            <li class="header__item">
+                <a href="/pages/catalog/index.html" class="header__link">Catalog</a>
+            </li> 
+            <li class="header__item">
+                <a href="/pages/toys/index.html" class="header__link">About us</a>
+            </li>
+        </ul>
+        <ul class="header__list_contact">
+            <li class="header__item_contact">
+                <a href="#" class="header__serch"><img class="search" src="/static/images/serch.png" alt="Search"></a>
+            </li>
+            <li class="header__item">
+                <a href="/contact-us.html" class="header__link">Contact Us</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="mobile-header">
+        <div class="header__list">
+            <div class="mobile-header__item">
+                <a href="/index.html"><img class="header__logo" src="/static/images/logo.jpg" alt="Site logo"></a>
+            </div>
+            <div class="mobile-header__item-open">
+                <div class="mobile-menu">
+                        <input type="checkbox" class="mobile-menu__checkbox" id="menu"></input>
+                        <label class="mobile-menu__label" for="menu"></label>
+                    <ul class="mobile-menu__list">
+                        <li class="mobile-menu__item">
+                            <a class="header__link" href="#">catalog</a>
+                        </li>
+                        <li class="mobile-menu__item">
+                            <a class="header__link" href="#">about us</a>
+                        </li>
+                        <li class="mobile-menu__item">
+                            <a class="header__link" href="#">blog</a>
+                        </li>
+                        <li class="mobile-menu__item">
+                            <a class="header__link" href="#">animation</a>
+                        </li>
+                        <li class="mobile-menu__item">
+                            <a class="header__link" href="#">svg</a>
+                        </li>
+                        <li class="mobile-menu__item">
+                            <a class="header__link" href="#">grid</a>
+                        </li>
+                        <li class="mobile-menu__item">
+                            <a class="header__link" href="#">contact us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mobile-header__item">
+                <a href="#" class="header__serch"><img src="/static/images/serch.png" alt="Search"></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="mobile__popup">
+        <!-- <div class="mobile-header">
+                    <ul class="header__list">
+                        <li class="mobile-header__item">
+                            <a href="/index.html"><img class="header__logo" src="/static/images/logo.jpg" alt="Site logo"></a>
+                        </li>
+                        <li class="mobile-header__item">
+                            <button class="mobile-header__button_close">x</button>
+                        </li>
+                        <li class="mobile-header__item">
+                            <a href="#" class="header__serch"><img src="/static/images/serch.png" alt="Search"></a>
+                        </li>
+                    </ul>
+                </div> -->
+
+    </div>
+</header>
+    <main class="blog-content container">
+        <section class="toys">
+            <h1 class="toys__title">Toy for kids</h1>
+            <ul class="toys__title_menu">
+                <li class="toys__title_menu-item">
+                    <a href="/index.html" class="toys__title_menu-link breadcrumb">Home</a>
+                </li>
+                <li class="toys__title_menu-item">
+                    <a class="active-catalog breadcrumb">Blog</a>
+                </li>
+            </ul>
+        </section>
+        <div class="blog-content">
+            <ul class="blog-content__list">
+                <li class="blog-card">
+    <img class="blog-card__image" src="/static/images/blog/1.png" alt="blog-image">
+    <span class="blog-card__date">23rd August 2018</span>
+    <h3 class="blog-card__title">Top 5 fastest growing it service companies in philly</h3>
+    <p class="blog-card__description">Direct Line Development’s Team is excited to announce that we received UpCity’s 2019 Local Excellence Award! This prestigious award is annually presented to the Top 1% of service providers in the given marketplace.</p>
+</li>
+                <li class="blog-card">
+    <img class="blog-card__image" src="/static/images/blog/2.png" alt="blog-image">
+    <span class="blog-card__date">23rd August 2018</span>
+    <h3 class="blog-card__title">Best financial</h3>
+    <p class="blog-card__description">$Direct Line Development is honored to be recognized as one of the Top 100 Fastest Growing Companies 2019 in Philadelphia, according to Growjo’s ranking.</p>
+</li>
+                <li class="blog-card">
+    <img class="blog-card__image" src="/static/images/blog/3.png" alt="blog-image">
+    <span class="blog-card__date">23rd August 2018</span>
+    <h3 class="blog-card__title">Company logo or brand identity: which one is more important? brand identity</h3>
+    <p class="blog-card__description">To survive in the world of digital marketing, you need to keep up with the latest SEO trends. Here are our simple, but effective, SEO tips for small business success.</p>
+</li>
+                <li class="blog-card">
+    <img class="blog-card__image" src="/static/images/blog/4.png" alt="blog-image">
+    <span class="blog-card__date">23rd August 2018</span>
+    <h3 class="blog-card__title">Best financial</h3>
+    <p class="blog-card__description">$Direct Line Development is honored to be recognized as one of the Top 100 Fastest Growing Companies 2019 in Philadelphia, according to Growjo’s ranking.</p>
+</li>
+                <li class="blog-card">
+    <img class="blog-card__image" src="/static/images/blog/5.png" alt="blog-image">
+    <span class="blog-card__date">23rd August 2018</span>
+    <h3 class="blog-card__title">Company logo or brand identity: which one is more important? brand identity</h3>
+    <p class="blog-card__description">To survive in the world of digital marketing, you need to keep up with the latest SEO trends. Here are our simple, but effective, SEO tips for small business success.</p>
+</li>
+                <li class="blog-card">
+    <img class="blog-card__image" src="/static/images/blog/6.png" alt="blog-image">
+    <span class="blog-card__date">23rd August 2018</span>
+    <h3 class="blog-card__title">Top 5 fastest growing it service companies in philly</h3>
+    <p class="blog-card__description">Direct Line Development’s Team is excited to announce that we received UpCity’s 2019 Local Excellence Award! This prestigious award is annually presented to the Top 1% of service providers in the given marketplace.</p>
+</li>
+            </ul>
+        </div>
+        <div class="content-toys__buttons">
+            <button class="content-toys__buttons_btn"></button>
+            <div class="content-toys__pagination">
+                <button class="content-toys__pagination_btn">1</button>
+                <button class="content-toys__pagination_btn">2</button>
+                <button class="content-toys__pagination_btn">3</button>
+                <button class="content-toys__pagination_btn">4</button>
+            </div>
+            <button class="content-toys__buttons_btn"></button>
+        </div>
+    </main>
+    <footer class="footer">
+    <div class="footer__contain container">
+        <div class="footer__wrapper">
+            <div class="footer__list">
+                <div class="footer__wrapper_one">
+                    <div class="footer__first_item_nav">
+                        <a href="#" class="footer__first_link_nav">Navigation</a>
+                    </div>
+                    <ul class="footer__first">
+                        <li class="footer__first_item">
+                            <a href="#" class="footer__first_link">About Us</a>
+                        </li>
+                        <li class="footer__first_item">
+                            <a href="#" class="footer__first_link">Blog</a>
+                        </li>
+                        <li class="footer__first_item">
+                            <a href="#" class="footer__first_link">Design Services</a>
+                        </li>
+                        <li class="footer__first_item">
+                            <a href="#" class="footer__first_link">Featured On</a>
+                        </li>
+                        <li class="footer__first_item">
+                            <a href="#" class="footer__first_link">2018 Holiday Catalog</a>
+                        </li>
+                        <li class="footer__first_item">
+                            <a href="#" class="footer__first_link">Shop By Designer</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__wrapper_two">
+                    <div class="footer__first_item_nav">
+                        <a href="#" class="footer__first_link_nav">Customer Information</a>
+                    </div>
+                    <ul class="footer__second">
+                        <li class="footer__first_item">
+                            <a href="#" class="footer__first_link">Contact Us</a>
+                        </li>
+                        <li class="footer__first_item">
+                            <a href="#" class="footer__first_link">Sale Exclusions</a>
+                        </li>
+                        <li class="footer__first_item">
+                            <a href="#" class="footer__first_link">Shipping & Returns</a>
+                        </li>
+                        <li class="footer__first_item">
+                            <a href="#" class="footer__first_link">Terms & Conditions</a>
+                        </li>
+                        <li class="footer__first_item">
+                            <a href="#" class="footer__first_link">Privacy Policy</a>
+                        </li>
+                        <li class="footer__first_item">
+                            <a href="#" class="footer__first_link">Search</a>
+                    </ul>
+                </div>
+                <div class="footer__wrapper_three">
+                        <div class="footer__first_item_nav">
+                            <a href="#" class="footer__first_link_nav">Connect</a>
+                        </div>
+                    <div class="footer__connect">
+                        <form class="footer__connect_form">
+                            <input type="search" placeholder="Email" class="footer__form_input">
+                            <a href="#" class="link__button">join</a>
+                        </form>
+                        <div class="footer__connect_network">
+                            <a href="#"><img src="/static/images/social networks/facebook.svg" alt="facebook"
+                                    class="footer__connect_image"></a>
+                            <a href="#"><img src="/static/images/social networks/twitter.svg" alt="twitter"
+                                    class="footer__connect_image"></a>
+                            <a href="#"><img src="/static/images/social networks/pinterest.svg" alt="pinterest"
+                                    class="footer__connect_image"></a>
+                            <a href="#"><img src="/static/images/social networks/instagram.svg" alt="instagram"
+                                    class="footer__connect_image"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="footer__bottom_rating">
+                <span class="footer__bottom_caption">Company rating</span>
+                <div class="rating-group">
+    <input class="rating-star" type="radio" value="1" name="rating" aria-label="one">
+    <input class="rating-star" type="radio" value="2" name="rating" aria-label="two">
+    <input class="rating-star" type="radio" value="3" name="rating" aria-label="three">
+    <input class="rating-star" type="radio" value="4" name="rating" aria-label="four">
+    <input class="rating-star" type="radio" value="5" name="rating" aria-label="five">
+</div>
+            </div>
+            <span class="footer__bottom_link">Copyright © 2018 Dlk • Design Life Kids</span>
+            <span class="footer__bottom_link-nav">Web Design — Direct Line Development</span>
+        </div>
+    </div>
+</footer>
+</body>
+
+</html>
