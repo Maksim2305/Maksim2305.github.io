@@ -16,8 +16,7 @@ initial-scale=1">
     <title>Игрушки</title>
 </head>
 
-<body>
-    <header class="header container">
+<header class="header container">
     <div class="header__wrapper">
         <ul class="header__list">
             <li class="header__item__logo">
@@ -44,195 +43,182 @@ initial-scale=1">
     </div>
 
     <div class="mobile-header">
-        <div class="header__list">
-            <div class="mobile-header__item">
+        <ul class="header__list">
+            <li class="mobile-header__item">
                 <a href="/index.html"><img class="header__logo" src="/static/images/logo.jpg" alt="Site logo"></a>
-            </div>
-            <div class="mobile-header__item-open">
-                <div class="mobile-menu">
-                        <input type="checkbox" class="mobile-menu__checkbox" id="menu"></input>
-                        <label class="mobile-menu__label" for="menu"></label>
-                    <ul class="mobile-menu__list">
-                        <li class="mobile-menu__item">
-                            <a class="header__link" href="#">catalog</a>
-                        </li>
-                        <li class="mobile-menu__item">
-                            <a class="header__link" href="#">about us</a>
-                        </li>
-                        <li class="mobile-menu__item">
-                            <a class="header__link" href="#">blog</a>
-                        </li>
-                        <li class="mobile-menu__item">
-                            <a class="header__link" href="#">animation</a>
-                        </li>
-                        <li class="mobile-menu__item">
-                            <a class="header__link" href="#">svg</a>
-                        </li>
-                        <li class="mobile-menu__item">
-                            <a class="header__link" href="#">grid</a>
-                        </li>
-                        <li class="mobile-menu__item">
-                            <a class="header__link" href="#">contact us</a>
-                        </li>
-                    </ul>
+            </li>
+            <li class="mobile-header__item">
+                <div class="mobile-header__menu">
+                    <a  class="open-mobile-popup" href="#">menu</a>
+                    <a  class="close-mobile-popup" href="#">+</a>
                 </div>
-            </div>
-            <div class="mobile-header__item">
+            </li>
+            <li class="mobile-header__item">
                 <a href="#" class="header__serch"><img src="/static/images/serch.png" alt="Search"></a>
-            </div>
-        </div>
-    </div>
-
-    <div class="mobile__popup">
-        <!-- <div class="mobile-header">
-                    <ul class="header__list">
-                        <li class="mobile-header__item">
-                            <a href="/index.html"><img class="header__logo" src="/static/images/logo.jpg" alt="Site logo"></a>
-                        </li>
-                        <li class="mobile-header__item">
-                            <button class="mobile-header__button_close">x</button>
-                        </li>
-                        <li class="mobile-header__item">
-                            <a href="#" class="header__serch"><img src="/static/images/serch.png" alt="Search"></a>
-                        </li>
-                    </ul>
-                </div> -->
-
+            </li>
+        </ul>
     </div>
 </header>
-    <main>
-        <section class="toys container">
-            <h1 class="toys__title">Toy for kids</h1>
-            <ul class="toys__title_menu">
-                <li class="toys__title_menu-item">
-                    <a href="/index.html" class="toys__title_menu-link breadcrumb">Home</a>
-                </li>
-                <li class="toys__title_menu-item">
-                    <a href="/pages/catalog/index.html" class="toys__title_menu-link breadcrumb">Catalog</a>
-                </li>
-                <li class="toys__title_menu-item">
-                    <a class="active-catalog breadcrumb">Toys</a>
-                </li>
-            </ul>
-        </section>
-        <form class="toys-form">
-            <div class="toys-form__wrapper container">
-                <div class="toys-form__inner">
-                    <div class="toys-form__one">
-                        <h2 class="toys-form__title">Cost</h2>
-                        <div class="toys-form__block">
-                            <input type="range" class="toys-form__block_slider" id="cost" name="range-cost" min="0"
-                                max="500">
-                        </div>
-                    </div>
-                    <div class="toys-form__two">
-                        <h2 class="toys-form__title">Color</h2>
-                        <div class="toys-form__block">
-                            <div class="toys-form__block_checkbox">
-                                <input type="checkbox" class="toys-form__block_checkbox-input" id="black" name="Color"
-                                    checked>
-                                <label for="black" class="toys-form__block_checkbox-label">Black</label>
-                            </div>
-                            <div class="toys-form__block_checkbox">
-                                <input type="checkbox" class="toys-form__block_checkbox-input" id="blue" name="Color">
-                                <label for="blue" class="toys-form__block_checkbox-label">Blue</label>
-                            </div>
-                            <div class="toys-form__block_checkbox">
-                                <input type="checkbox" class="toys-form__block_checkbox-input" id="green" name="Color">
-                                <label for="green" class="toys-form__block_checkbox-label">Green</label>
-                            </div>
-                            <div class="toys-form__block_checkbox">
-                                <input type="checkbox" class="toys-form__block_checkbox-input" id="white" name="Color">
-                                <label for="white" class="toys-form__block_checkbox-label">White</label>
-                            </div>
-                        </div>
-                    </div>
+<section class="mobile-section">
+    <div class="mobile-popup">
+        <ul class="mobile-popup__list">
+            <li class="mobile-popup__item">
+                <a class="header__link" href="/pages/catalog/index.html">catalog</a>
+            </li>
+            <li class="mobile-popup__item">
+                <a class="header__link" href="/pages/toys/index.html">about us</a>
+            </li>
+            <li class="mobile-popup__item">
+                <a class="header__link" href="/pages/blog/index.html">blog</a>
+            </li>
+            <li class="mobile-popup__item">
+                <a class="header__link" href="#">animation</a>
+            </li>
+            <li class="mobile-popup__item">
+                <a class="header__link" href="#">svg</a>
+            </li>
+            <li class="mobile-popup__item">
+                <a class="header__link" href="#">grid</a>
+            </li>
+            <li class="mobile-popup__item">
+                <a class="header__link" href="#">contact us</a>
+            </li>
+        </ul>
+    </div>
+</section>
 
-                    <div class="toys-form__three">
-                        <h2 class="toys-form__title">Delivery</h2>
-                        <div class="toys-form__block">
-                            <div class="toys-form__block_radio">
-                                <input type="radio" class="toys-form__block_radio-input" id="free" name="shipping">
-                                <label for="free" class="toys-form__block_radio-label">Free shipping</label>
-                            </div>
-                            <div class="toys-form__block_radio">
-                                <input type="radio" class="toys-form__block_radio-input" id="fast" name="shipping"
-                                    checked>
-                                <label for="fast" class="toys-form__block_radio-label">Fast shipping</label>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="toys-form__four">
-                        <h2 class="toys-form__title">Amount</h2>
-                        <div class="toys-form__block-flex">
-                            <div class="toys-form__block-flex_radio">
-                                <input type="radio" class="toys-form__block-flex_radio-input" id="one" name="amount"
-                                    checked>
-                                <label for="one" class="toys-form__block-flex_radio-label">0-5</label>
-                            </div>
-                            <div class="toys-form__block-flex_radio">
-                                <input type="radio" class="toys-form__block-flex_radio-input" id="two" name="amount">
-                                <label for="two" class="toys-form__block-flex_radio-label">10-20</label>
-                            </div>
-                            <div class="toys-form__block-flex_radio">
-                                <input type="radio" class="toys-form__block-flex_radio-input" id="three" name="amount">
-                                <label for="three" class="toys-form__block-flex_radio-label">20-50</label>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="toys-form__five">
-                        <button class="collection__button">Apply</button>
+<main>
+    <section class="toys container">
+        <h1 class="toys__title">Toy for kids</h1>
+        <ul class="toys__title_menu">
+            <li class="toys__title_menu-item">
+                <a href="/index.html" class="toys__title_menu-link breadcrumb">Home</a>
+            </li>
+            <li class="toys__title_menu-item">
+                <a href="/pages/catalog/index.html" class="toys__title_menu-link breadcrumb">Catalog</a>
+            </li>
+            <li class="toys__title_menu-item">
+                <a class="active-catalog breadcrumb">Toys</a>
+            </li>
+        </ul>
+    </section>
+    <form class="toys-form">
+        <div class="toys-form__wrapper container">
+            <div class="toys-form__inner">
+                <div class="toys-form__one">
+                    <h2 class="toys-form__title">Cost</h2>
+                    <div class="toys-form__block">
+                        <input type="range" class="toys-form__block_slider" id="cost" name="range-cost" min="0"
+                            max="500">
                     </div>
                 </div>
+                <div class="toys-form__two">
+                    <h2 class="toys-form__title">Color</h2>
+                    <div class="toys-form__block">
+                        <div class="toys-form__block_checkbox">
+                            <input type="checkbox" class="toys-form__block_checkbox-input" id="black" name="Color"
+                                checked>
+                            <label for="black" class="toys-form__block_checkbox-label">Black</label>
+                        </div>
+                        <div class="toys-form__block_checkbox">
+                            <input type="checkbox" class="toys-form__block_checkbox-input" id="blue" name="Color">
+                            <label for="blue" class="toys-form__block_checkbox-label">Blue</label>
+                        </div>
+                        <div class="toys-form__block_checkbox">
+                            <input type="checkbox" class="toys-form__block_checkbox-input" id="green" name="Color">
+                            <label for="green" class="toys-form__block_checkbox-label">Green</label>
+                        </div>
+                        <div class="toys-form__block_checkbox">
+                            <input type="checkbox" class="toys-form__block_checkbox-input" id="white" name="Color">
+                            <label for="white" class="toys-form__block_checkbox-label">White</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="toys-form__three">
+                    <h2 class="toys-form__title">Delivery</h2>
+                    <div class="toys-form__block">
+                        <div class="toys-form__block_radio">
+                            <input type="radio" class="toys-form__block_radio-input" id="free" name="shipping">
+                            <label for="free" class="toys-form__block_radio-label">Free shipping</label>
+                        </div>
+                        <div class="toys-form__block_radio">
+                            <input type="radio" class="toys-form__block_radio-input" id="fast" name="shipping" checked>
+                            <label for="fast" class="toys-form__block_radio-label">Fast shipping</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="toys-form__four">
+                    <h2 class="toys-form__title">Amount</h2>
+                    <div class="toys-form__block-flex">
+                        <div class="toys-form__block-flex_radio">
+                            <input type="radio" class="toys-form__block-flex_radio-input" id="one" name="amount"
+                                checked>
+                            <label for="one" class="toys-form__block-flex_radio-label">0-5</label>
+                        </div>
+                        <div class="toys-form__block-flex_radio">
+                            <input type="radio" class="toys-form__block-flex_radio-input" id="two" name="amount">
+                            <label for="two" class="toys-form__block-flex_radio-label">10-20</label>
+                        </div>
+                        <div class="toys-form__block-flex_radio">
+                            <input type="radio" class="toys-form__block-flex_radio-input" id="three" name="amount">
+                            <label for="three" class="toys-form__block-flex_radio-label">20-50</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="toys-form__five">
+                    <button class="collection__button">Apply</button>
+                </div>
             </div>
-        </form>
-        <section class="content-toys container">
-            <ul class="content-toys__list">
-                <li class="toys-card">
+        </div>
+    </form>
+    <section class="content-toys container">
+        <ul class="content-toys__list">
+            <li class="toys-card">
     <img class="toys-card__image" src="/static/images/toys/1.png" alt="toys">
     <h3 class="toys-card__title">SHARKY BEAN BAG CHAIR COVER</h3>
     <p class="toys-card__price">$60.00 USD</p>
 </li>
-                <li class="toys-card">
+            <li class="toys-card">
     <img class="toys-card__image" src="/static/images/toys/2.png" alt="toys">
     <h3 class="toys-card__title">BRASS DECO FRAMES</h3>
     <p class="toys-card__price">$66.00 USD</p>
 </li>
-                <li class="toys-card">
+            <li class="toys-card">
     <img class="toys-card__image" src="/static/images/toys/3.png" alt="toys">
     <h3 class="toys-card__title">CIBO FULL APRON</h3>
     <p class="toys-card__price">$60.00 USD</p>
 </li>
-                <li class="toys-card">
+            <li class="toys-card">
     <img class="toys-card__image" src="/static/images/toys/4.png" alt="toys">
     <h3 class="toys-card__title">GATCHA GATCHA GUMBALL MACHINE</h3>
     <p class="toys-card__price">$56.00 USD</p>
 </li>
-                <li class="toys-card">
+            <li class="toys-card">
     <img class="toys-card__image" src="/static/images/toys/5.png" alt="toys">
     <h3 class="toys-card__title">CHRISTMAS ADVENT SCENTED CANDLE</h3>
     <p class="toys-card__price">$29.00 USD</p>
 </li>
-                <li class="toys-card">
+            <li class="toys-card">
     <img class="toys-card__image" src="/static/images/toys/6.png" alt="toys">
     <h3 class="toys-card__title">TANGLE SPINNING TEA LIGHT</h3>
     <p class="toys-card__price">$56.00 USD</p>
 </li>
-            </ul>
-            <div class="content-toys__buttons">
-                <button class="content-toys__buttons_btn"></button>
-                <div class="content-toys__pagination">
-                    <button class="content-toys__pagination_btn">1</button>
-                    <button class="content-toys__pagination_btn">2</button>
-                    <button class="content-toys__pagination_btn">3</button>
-                    <button class="content-toys__pagination_btn">4</button>
-                </div>
-                <button class="content-toys__buttons_btn"></button>
+        </ul>
+        <div class="content-toys__buttons">
+            <button class="content-toys__buttons_btn"></button>
+            <div class="content-toys__pagination">
+                <button class="content-toys__pagination_btn">1</button>
+                <button class="content-toys__pagination_btn">2</button>
+                <button class="content-toys__pagination_btn">3</button>
+                <button class="content-toys__pagination_btn">4</button>
             </div>
-        </section>
-    </main>
-    <footer class="footer">
+            <button class="content-toys__buttons_btn"></button>
+        </div>
+    </section>
+</main>
+<footer class="footer">
     <div class="footer__contain container">
         <div class="footer__wrapper">
             <div class="footer__list">
@@ -324,7 +310,7 @@ initial-scale=1">
         </div>
     </div>
 </footer>
-    <script src="index.js"></script>
+<script src="index.js"></script>
 </body>
 
 </html>
