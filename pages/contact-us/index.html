@@ -13,7 +13,7 @@
     <link rel="shortcut icon" href="/static/images/favicon.ico" />
     <meta name="viewport" content="width=device-width,
 initial-scale=1">
-    <title>Игрушки</title>
+    <title>Contact-us</title>
 </head>
 
 <body>
@@ -89,68 +89,54 @@ initial-scale=1">
     </div>
 </section>
 
-    <main class="blog-content container">
-        <section class="toys">
-            <h1 class="toys__title">Toy for kids</h1>
-            <ul class="toys__title_menu">
-                <li class="toys__title_menu-item">
-                    <a href="/index.html" class="toys__title_menu-link breadcrumb">Home</a>
-                </li>
-                <li class="toys__title_menu-item">
-                    <a class="active-catalog breadcrumb">Blog</a>
-                </li>
-            </ul>
+    <main class=" container">
+        <h1 class="toys__title">Toy for kids</h1>
+        <ul class="toys__title_menu">
+            <li class="toys__title_menu-item">
+                <a href="/index.html" class="toys__title_menu-link breadcrumb">Home</a>
+            </li>
+            <li class="toys__title_menu-item">
+                <a href="/pages/catalog/index.html" class="toys__title_menu-link breadcrumb">Catalog</a>
+            </li>
+            <li class="toys__title_menu-item">
+                <a class="active-catalog breadcrumb">Toys</a>
+            </li>
+        </ul>
+        <section>
+            <form class="popup__form">
+                <button type="button" class="popup__button-close" id="popup-close-button"></button>
+                <div class="popup__form_input">
+                    <label class="popup__form_label" for="name">Name</label>
+                    <input class="popup__form_item" type="text" placeholder="Ivan Ivanov" id="name">
+                </div>
+                <div class="popup__form_input-two">
+                    <div class="popup__form_input">
+                        <label class="popup__form_label" for="name">Phone</label>
+                        <input class="popup__form_item" type="tel" id="phone">
+                    </div>
+                    <div class="popup__form_input">
+                        <label class="popup__form_label" for="email">Email</label>
+                        <input class="popup__form_item" type="text" id="email">
+                    </div>
+                </div>
+                <div class="popup__form_input">
+                    <label class="popup__form_label" for="message">Message</label>
+                    <textarea class="popup__form_item-message" id="message"></textarea>
+                </div>
+                <div class="popup__form_input">
+                    <div class="popup__form_check">
+                        <div class="popup__inputs">
+                            <input class="checkbox-input" type="checkbox" id="contact-chekcbox">
+                            <label for="contact-chekcbox" class="checkbox-label">By clicking on the button, you consent to the
+                        processing of your personal data</label>
+                        </div>
+                        <div>
+                            <a href="#" class="link__button">submit</a>
+                        </div>
+                    </div>
+                </div>
+            </form>
         </section>
-        <div class="blog-content">
-            <ul class="blog-content__list">
-                <li class="blog-card">
-    <img class="blog-card__image" src="/static/images/blog/1.png" alt="blog-image">
-    <span class="blog-card__date">23rd August 2018</span>
-    <h3 class="blog-card__title">Top 5 fastest growing it service companies in philly</h3>
-    <p class="blog-card__description">Direct Line Development’s Team is excited to announce that we received UpCity’s 2019 Local Excellence Award! This prestigious award is annually presented to the Top 1% of service providers in the given marketplace.</p>
-</li>
-                <li class="blog-card">
-    <img class="blog-card__image" src="/static/images/blog/2.png" alt="blog-image">
-    <span class="blog-card__date">23rd August 2018</span>
-    <h3 class="blog-card__title">Best financial</h3>
-    <p class="blog-card__description">$Direct Line Development is honored to be recognized as one of the Top 100 Fastest Growing Companies 2019 in Philadelphia, according to Growjo’s ranking.</p>
-</li>
-                <li class="blog-card">
-    <img class="blog-card__image" src="/static/images/blog/3.png" alt="blog-image">
-    <span class="blog-card__date">23rd August 2018</span>
-    <h3 class="blog-card__title">Company logo or brand identity: which one is more important? brand identity</h3>
-    <p class="blog-card__description">To survive in the world of digital marketing, you need to keep up with the latest SEO trends. Here are our simple, but effective, SEO tips for small business success.</p>
-</li>
-                <li class="blog-card">
-    <img class="blog-card__image" src="/static/images/blog/4.png" alt="blog-image">
-    <span class="blog-card__date">23rd August 2018</span>
-    <h3 class="blog-card__title">Best financial</h3>
-    <p class="blog-card__description">$Direct Line Development is honored to be recognized as one of the Top 100 Fastest Growing Companies 2019 in Philadelphia, according to Growjo’s ranking.</p>
-</li>
-                <li class="blog-card">
-    <img class="blog-card__image" src="/static/images/blog/5.png" alt="blog-image">
-    <span class="blog-card__date">23rd August 2018</span>
-    <h3 class="blog-card__title">Company logo or brand identity: which one is more important? brand identity</h3>
-    <p class="blog-card__description">To survive in the world of digital marketing, you need to keep up with the latest SEO trends. Here are our simple, but effective, SEO tips for small business success.</p>
-</li>
-                <li class="blog-card">
-    <img class="blog-card__image" src="/static/images/blog/6.png" alt="blog-image">
-    <span class="blog-card__date">23rd August 2018</span>
-    <h3 class="blog-card__title">Top 5 fastest growing it service companies in philly</h3>
-    <p class="blog-card__description">Direct Line Development’s Team is excited to announce that we received UpCity’s 2019 Local Excellence Award! This prestigious award is annually presented to the Top 1% of service providers in the given marketplace.</p>
-</li>
-            </ul>
-        </div>
-        <div class="content-toys__buttons">
-            <button class="content-toys__buttons_btn"></button>
-            <div class="content-toys__pagination">
-                <button class="content-toys__pagination_btn">1</button>
-                <button class="content-toys__pagination_btn">2</button>
-                <button class="content-toys__pagination_btn">3</button>
-                <button class="content-toys__pagination_btn">4</button>
-            </div>
-            <button class="content-toys__buttons_btn"></button>
-        </div>
     </main>
     <footer class="footer">
     <div class="footer__contain container">
