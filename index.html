@@ -38,7 +38,7 @@ initial-scale=1">
                 <a href="#" class="header__serch"><img class="search" src="/static/images/serch.png" alt="Search"></a>
             </li>
             <li class="header__item">
-                <a href="/pages/contact-us/index.html" class="header__link">Contact Us</a>
+                <a href="/pages/contact/index.html" class="header__link">Contact Us</a>
             </li>
         </ul>
     </div>
@@ -50,8 +50,7 @@ initial-scale=1">
             </li>
             <li class="mobile-header__item">
                 <div class="mobile-header__menu">
-                    <a  class="open-mobile-popup" href="#">menu</a>
-                    <a  class="close-mobile-popup" href="#">+</a>
+                    <div class="open-mobile-popup menu_hidden_js" href="#">menu</div>
                 </div>
             </li>
             <li class="mobile-header__item">
@@ -60,7 +59,7 @@ initial-scale=1">
         </ul>
     </div>
 </header>
-<section class="mobile-section">
+<section class="mobile-section menu_list_js mobile-popup_hidden">
     <div class="mobile-popup">
         <ul class="mobile-popup__list">
             <li class="mobile-popup__item">
@@ -90,40 +89,46 @@ initial-scale=1">
 
   <main>
     <div class="popup">
-    <form class="popup__form">
+    <form class="popup__form popup-form_js" name="SignIn">
         <button type="button" class="popup__button-close" id="popup-close-button"></button>
         <div class="popup__form_input">
             <label class="popup__form_label" for="name">Name</label>
-            <input class="popup__form_item" type="text" placeholder="Ivan Ivanov" id="name">
+            <input class="popup__form_item" type="text" name="name" placeholder="Ivan Ivanov" id="name">
+            <div class="invalid-feedback"></div>
         </div>
         <div class="popup__form_input-two">
             <div class="popup__form_input">
                 <label class="popup__form_label" for="name">Phone</label>
-                <input class="popup__form_item" type="tel" id="phone">
+                <input class="popup__form_item" type="tel" name="phone" id="phone">
+                <div class="invalid-feedback"></div>
             </div>
             <div class="popup__form_input">
                 <label class="popup__form_label" for="email">Email</label>
-                <input class="popup__form_item" type="text" id="email">
+                <input class="popup__form_item" type="text" name="email" id="email">
+                <div class="invalid-feedback"></div>
             </div>
         </div>
         <div class="popup__form_input">
             <label class="popup__form_label" for="message">Message</label>
-            <textarea class="popup__form_item-message" id="message"></textarea>
+            <textarea class="popup__form_item-message"  id="message" name="textarea"></textarea>
         </div>
         <div class="popup__form_input">
             <div class="popup__form_check">
                 <div class="popup__inputs">
-                    <input class="checkbox-input" type="checkbox" id="contact-chekcbox">
+                    <input class="checkbox-input" type="checkbox" name="checkbox" id="contact-checkbox" value="yes">
                     <label for="contact-chekcbox" class="checkbox-label">By clicking on the button, you consent to the
                 processing of your personal data</label>
+                <div class="invalid-feedback"></div>
                 </div>
                 <div>
-                    <a href="#" class="link__button">submit</a>
+                    <button type="submit" class="contact-btn">Submit</button>
                 </div>
+                
             </div>
         </div>
     </form>
 </div>
+    <div class="button-to-top_hidden button-to-top_js"></div>
     <section class="collection container">
       <div class="collection__wrapper">
         <div class="collection__button_block">
@@ -152,24 +157,31 @@ initial-scale=1">
     <section class="products container">
       <div class="products__wrapper">
         <h2 class="products__title">Category Products</h2>
-        <ul class="products__list">
-          <li class="products-item">
+        <div class="slider-wrapper_js">
+          <ul class="products__list slider_js">
+            <li class="products-item">
     <img class="products-item__image" src="/static/images/produtcs/1.jpg" alt="card">
     <a href="#" class="products-item__link">APPAREL <br>KIDS</a>
 </li>
-          <li class="products-item">
+            <li class="products-item">
     <img class="products-item__image" src="/static/images/produtcs/2.jpg" alt="card">
     <a href="#" class="products-item__link">HOLIDAY <br>SHOP</a>
 </li>
-          <li class="products-item">
+            <li class="products-item">
     <img class="products-item__image" src="/static/images/produtcs/3.jpg" alt="card">
     <a href="#" class="products-item__link">TOYS</a>
 </li>
-          <li class="products-item">
+            <li class="products-item">
     <img class="products-item__image" src="/static/images/produtcs/4.jpg" alt="card">
     <a href="#" class="products-item__link">ACCESSORIES</a>
 </li>
-        </ul>
+            <li class="products-item">
+    <img class="products-item__image" src="/static/images/produtcs/4.jpg" alt="card">
+    <a href="#" class="products-item__link">ACCESSORIES</a>
+</li>
+              
+          </ul>
+        </div>
         <div class="products__pagination">
           <button class="products__pagination__left"></button>
           <button class="products__pagination__right"></button>
@@ -189,8 +201,8 @@ initial-scale=1">
         </div>
         <div class="delivery__content">
           <h2 class="delivery__content_title">Delivery</h2>
-          <div class="delivery__content_button-active">
-            <span class="delivery__content_item-active">Delivery</span>
+          <div class="delivery__content_button">
+            <span class="delivery__content_item">Delivery</span>
           </div>
           <div class="delivery__content_button">
             <span class="delivery__content_item">Guarantee</span>
@@ -351,6 +363,7 @@ initial-scale=1">
     </div>
 </footer>
   <script src="scripts.js"></script>
+  <script src="popup.js"></script>
 </body>
 
 </html>
